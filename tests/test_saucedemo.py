@@ -28,7 +28,7 @@ class TestSauceDemo:
         # Validar que la URL contiene "inventory"
         inventory_page = InventoryPage(driver)
         inventory_page.esperar_carga()
-        assert "inventory" in driver.current_url, (
+        assert "pagina_que_no_existe" in driver.current_url
             f"Se esperaba 'inventory' en la URL, pero se obtuvo: {driver.current_url}"
         )
 
